@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeautyBlend</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="header-content">
+          <h1>💄 BeautyBlend</h1>
+          <button onclick="goToAnotherPage()">Let's add your top 5 makeup</button>
+        </div>
+      </header>
+      <div class="search-container">
+        <input type="text" id="serchData" placeholder="Enter brand" />
+        <select id="productType">
+          <option value="">Select Product Types</option>
+          <option value="lipstick">Lipstick</option>
+          <option value="eyeliner">Eyeliner</option>
+          <option value="lip_liner">Lip liner</option>
+          <option value="foundation">Foundation</option>
+          <option value="eyeshadow">Eyeshadow</option>
+          <option value="bronzer">Bronzer</option>
+          <option value="mascara">Mascara</option>
+          <option value="eyebrow">Eyebrow</option>
+          <option value="nail_polish">Nail polish</option>
+          <!-- Add more product types as needed -->
+        </select>
+        <select id="sortBy">
+          <option value="name">Sort by Name</option>
+          <option value="rating">Sort by Rating</option>
+        </select>
+        <button onclick="filterButtonClicked()">Apply</button>
+      </div>
+      <div id="results"></div>
+    </main>
+
+    <script src="fetchapi.js"></script>
+  </body>
+</html>
